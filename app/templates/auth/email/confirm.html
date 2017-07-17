@@ -1,0 +1,7 @@
+<p>Dear {{user.username}},</p>
+<p>	Welcome to my site^^</p>
+<p>	This mail to confirm your account please <a href="{{url_for('auth.confirm',token=token,_external=True)}}">click here</a>
+<p>	{{url_for('auth.confirm',token=token,_external=True)}}</p>
+<p>	But if you dont't register this account ,please ignore this mail.</p>
+<p>Sincerely,</p>
+<p>Thanks!</p>
