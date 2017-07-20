@@ -1,0 +1,8 @@
+Dear {{user.username}},
+	Welcome to my site^^
+	This mail to confirm your account please click on the follwing link:
+	{{url_for('auth.confirm',token=token,_external=True)}}
+	But if you dont't register this account ,please ignore this mail.
+Sincerely,
+Thanks!
+
