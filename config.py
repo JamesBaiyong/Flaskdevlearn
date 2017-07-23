@@ -14,6 +14,10 @@ class Config:
     FLASKY_MAIL_SUBJECT_PREFIX = '[Flasky]'
     FLASKY_MAIL_SENDER = 'Flasky Admin <gezipaopao@163.com>'
     FLASKY_ADMIN = os.environ.get('FLASKY_ADMIN')
+<<<<<<< HEAD
+=======
+    FLASKY_POSTS_PER_PAGE = 20  
+>>>>>>> 11e_0.1
 
     @staticmethod
     def init_app(app):

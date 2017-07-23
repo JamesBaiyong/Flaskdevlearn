@@ -57,7 +57,11 @@ def register():
 @login_required
 def confirm(token):
 	if current_user.confirmed:
+<<<<<<< HEAD
 		return redirect(urlfor('main.index'))
+=======
+		return redirect(url_for('main.index'))
+>>>>>>> 11e_0.1
 	if current_user.confirm(token):
 		flash('You have confirmed your account.Thanks!')
 	else:
