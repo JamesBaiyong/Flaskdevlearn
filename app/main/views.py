@@ -49,6 +49,11 @@ def edit_profile():
 	form.about_me.data = current_user.about_me
 	return render_template('edit_profile.html',form=form)
 
+@main.route('/post/<int:id>')
+def post(id):
+	post = Post.query.get_or_404(id)
+	return render_template('post.html',posts=[post])
+
 @main.route('/edit-profile/<int:id>',methods=['GET','POST'])
 @login_required
 @admin_required
